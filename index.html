@@ -451,7 +451,7 @@
     box-shadow: 0 0 12px #ff5f9e;
   }
 
-  @media (max-width: 720px) {
+  /* @media (max-width: 720px) {
     .love-book {
       grid-template-columns: 1fr;
       padding: 12px;
@@ -473,8 +473,72 @@
     .book-polaroid img {
       height: 210px;
     }
+  } */
+
+@media (max-width: 720px) {
+  .love-book {
+    grid-template-columns: 1fr;
+    padding: 12px;
   }
 
+  .love-book::before {
+    display: none;
+  }
+
+  /* Show only one page on mobile */
+  .book-page {
+    width: 100%;
+    min-height: 0;
+    padding: 18px 12px;
+  }
+
+  .book-left {
+    display: flex;
+    border-radius: 14px;
+    border: none;
+  }
+
+  /* Hide the second page */
+  .book-right {
+    display: none;
+  }
+
+  .book-polaroid {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 8px 12px;
+    transform: none;
+  }
+
+  .book-polaroid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    display: block;
+  }
+
+  .book-controls {
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .book-btn {
+    padding: 10px 16px;
+  }
+
+  .book-dots {
+    gap: 6px;
+    max-width: 60vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .book-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
   /* =========================================================
      FEATURE 2: ROLLING PHOTO GALLERY (INFINITE FILMSTRIP)
      ========================================================= */
@@ -923,7 +987,14 @@
     <div class="book-page book-left">
         <div class="book-polaroid"
              onclick="openLightbox(document.getElementById('bookPhotoLeft').src)">
-            <img id="bookPhotoLeft" src="" alt="Left Memory">
+            <!-- <img id="bookPhotoLeft" src="" alt="Left Memory"> -->
+             <img
+  id="bookPhotoLeft"
+  src=""
+  alt="Our Memory"
+  loading="lazy"
+  decoding="async"
+>
         </div>
     </div>
 
@@ -931,7 +1002,14 @@
     <div class="book-page book-right">
         <div class="book-polaroid"
              onclick="openLightbox(document.getElementById('bookPhotoRight').src)">
-            <img id="bookPhotoRight" src="" alt="Right Memory">
+            <!-- <img id="bookPhotoRight" src="" alt="Right Memory"> -->
+             <img
+  id="bookPhotoRight"
+  src=""
+  alt="Our Memory"
+  loading="lazy"
+  decoding="async"
+>
         </div>
     </div>
 
@@ -1083,9 +1161,9 @@
     </div>
 
     <div class="letter-content hidden" id="letterContent">
-      <p>My dear <b>Gundus</b>,</p><br>
+      <p>❤️ Happy Birthday <b>My Pattu!</b>,</p><br>
 
-      <p>Happy Birthday my cutie ❤️ Intha birthday unaku romba romba special ah irukanum. Un smile, un voice, un care, un small small antics — ellamey enakku romba precious. Naan unna paatha appovey, un presence en life la oru peaceful and beautiful feeling create pannuchu.</p><br>
+      <!-- <p>Happy Birthday my cutie ❤️ Intha birthday unaku romba romba special ah irukanum. Un smile, un voice, un care, un small small antics — ellamey enakku romba precious. Naan unna paatha appovey, un presence en life la oru peaceful and beautiful feeling create pannuchu.</p><br>
 
       <p>Nee enakku oru girlfriend mattum illa; nee en best friend, en comfort zone, en happy place. Enaku stress ah irundhaalum, un message or un voice paatha odaney konjam relax ah irukum. Nee en life la vandha appovey, naan romba blessed nu feel panren.</p><br>
 
@@ -1093,9 +1171,232 @@
 
       <p>Indha new age la unaku ellamey nalla varanum — good health, peace, success, love, and lots of happiness. Un every wish fulfill aaganum. Naan eppovum unaku support pannuven, unna care pannuven, unna respect pannuven.</p><br>
 
-      <p>Happy Birthday once again, my Gundus ❤️<br>Un smile eppovum ipdi dhaan irukanum. Love you loads and loads.</p><br>
+      <p>Happy Birthday once again, my Gundus ❤️<br>Un smile eppovum ipdi dhaan irukanum. Love you loads and loads.</p><br> -->
+        <p>My Dear Pattu, My Happiness, My Everything! ❤️🫂</p>
 
-      <p style="text-align:right; color:#ffd6e7;"><b>— Your Chellam ❤️</b></p>
+  <p>First of all, Iniya Piranthanaal Vazhthukkal di, en azhagi! 😘❤️</p>
+
+  <p>
+    Innaiku unakku romba special aana naal. Aana enakku mattum illa,
+    en life-la nee vandha naal laa irunthu ovvoru naalume special dhaan.
+    Un birthday enakku innum special. Because indha ulagathula enakku
+    ivlo pidicha oru person irukkaangana. Athu nee thaan, en Pattu! 🥹❤️
+  </p>
+
+  <p>
+    Enakku theriyala di, eppadi start panradhu-nu. Unkitta sollanum-nu
+    neraya feelings irukku. Aana adhellam vaarthaigala solla varumbodhu,
+    enakku enna sollanumnu theriyama poidudhu.
+  </p>
+
+  <p>
+    Unakku theriyuma? Naan un pakkathula irundhaalum unna romba miss
+    panren di. Idhu konjam strange ah irukkalaam. Pakkathula irukkura
+    oruthangala eppadi miss panna mudiyum nu nee yosikkalaam.
+    Aana enakku adhu daily nadakkudhu.
+  </p>
+
+  <p>
+    Nee en kooda irundhaalum, innum konjam neram un kooda irukkanum
+    nu thonum. Nee pesittu irundhaalum, innum neram un voice kekkanum
+    nu thonum. Nee sirichittu irundhaalum, andha smile ah innum konjam
+    neram paathuttu irukkanum nu thonum. 🥺❤️
+  </p>
+
+  <p>
+    Unna miss panradhu distance la mattum illa di. Unnoda presence ah,
+    unnoda voice ah, unnoda chinna chinna sandaigal ah, unnoda kovam ah,
+    unnoda siripp ah, unnoda childish behaviour ah, ellathayume naan
+    romba love panren. 🫶🏻
+  </p>
+
+  <p>And one more thing, en Pattu... I'm really sorry! 🥺💔</p>
+
+  <p>
+    Naan idhu varaikkum unna romba time hurt pannirukean.
+    Ennaala nee evlo vaati kashtapattirundhaalum, manasara sorry
+    kekkuren di. Sila neram en kovathunaala unna hurt panniruppen.
+    Sila neram nee enna purinjikkanum nu expect panni, naan unna
+    purinjikkaama poiruppen. Sila neram chinna vishayathukkellaam
+    kovapattu un manasa kashtapaduthirukean.
+  </p>
+
+  <p>
+    Aana Sammy, naan pannina andha mistakes ellathayum ippo yosichu
+    paakkumbodhu enakkum romba kashtama irukku. Unna sirikka vekkanum
+    nu ninaikkura naan, sila neram un kannula tears vara kaaranama
+    irundhirukken.
+  </p>
+
+  <p>
+    Adhukku ennaala mudinja alavukku mannippu kekkuren, mailu.
+    Please forgive me, Thangoo! 🥺❤️
+  </p>
+
+  <p>
+    Inimel naan eniya change panikirean mah. Idhu verum vaarthaiya
+    sollala. Manasara solren.
+  </p>
+
+  <p>
+    Inimel edhukkumey kovapada maatten. Un mela unnecessary ah kovam
+    kaatta maatten. Edhaavadhu problem irundhaa kovathula pesama,
+    un kooda calm ah pesi solve panna try panren. Unnoda feelings ah
+    purinjikka try panren. Unna hurt panra maadhiri pesuradhayum,
+    nadandhukuradhayum maathikka try pandrean.
+  </p>
+
+  <p>
+    Naan oru naalla perfect ah maariduven nu solla maatten.
+    Aana daily konjam konjama ennai improve pannippen.
+    Unakku love mattum illa, peace um happiness um kudukkura
+    oru person ah irukkanum nu aasai paduren.
+  </p>
+
+  <p>
+    Enakku unna lose panniduvonu bayamah irukku Sammy.
+    Adha vida, ennaala nee hurt aaga koodaadhu nu dhaan romba aasai.
+    Un sirippu enakku romba precious. Adha en kovathunaala oru naalum
+    azhikka virumbala. ❤️🫂
+  </p>
+
+  <p>
+    Sila neram unna happy ah vechikkanumnu aasai irukkum.
+    Unakku ella happiness um kudukkanum nu thonum.
+    Aana ella nerathulayum adha panna mudiyama pogumbodhu
+    konjam kashtama irukkum.
+  </p>
+
+  <p>
+    Naan perfect person illa thaan mah. Aana unakkaaga ennai
+    better person ah maathikka kandippa try pannuven.
+  </p>
+
+  <p>I LOVE YOU SO MUCH DI, MY BUTTU! ❤️😘</p>
+
+  <p>
+    Un mela enakku irukkura love ah oru letter la solli mudikka mudiyadhu.
+  </p>
+
+  <p>
+    Innaiku un birthday-ku unakku expensive gifts vaangik kodukka
+    mudiyama irukkalaam. Unna surprise panna periya arrangements
+    panna mudiyama irukkalaam. Aana ennaala mudinja oru chinna vishayam,
+    indha website moolama unakku create pannirukken.
+  </p>
+
+  <p>
+    Idhu just oru website illa mah. Idhula irukkura ovvoru word-um,
+    ovvoru feelings um, un mela naan vechirukkura anbin oru chinna part.
+    🥹💗
+  </p>
+
+  <p>
+    Idha paakkumbodhu nee oru vishayam mattum purinjikkanum.
+    Un birthday vah special aakka ennaala mudinja oru chinna effort idhu.
+    Un face la oru smile vandhaa kooda, adhu enakku podhum Sammy 🥹
+  </p>
+
+  <p>
+    Un life la nee ninaikkira ella dreams um nadakkanum.
+    Nee eppovume happy ah irukkanum. Unakku pidicha maadhiri
+    un life beautiful ah irukkanum. Un kannula tears vandhaalum
+    adhu happiness tears ah mattum irukkanum.
+  </p>
+
+  <p>
+    Unakku kashtam varumbodhu unakku support ah naan irupean
+    as always ♾️. Un happiness la un kooda serndhu sirikkanum.
+    Un sadness la un kaiya pidichittu pakkathula irukkanum. 🫂❤️‍🩹
+  </p>
+
+  <p>
+    Namma life la evlo misunderstandings vandhaalum,
+    evlo sandaigal vandhaalum, namma rendu perum orutharukku
+    oruthar purinjikittu irukkanum.
+  </p>
+
+  <p>
+    Love-na eppovume happy ah irukkaradhu mattum illa.
+    Kashtamaana moments layum oruthara oruthar choose panradhu
+    dhaan nu naan namburen.
+  </p>
+
+  <p>
+    Enakku future pathi ore dream thaan Sammy.
+    Naa nee namakana oru small life 🥹🫠❤️‍🩹.
+    Namma rendu perum serndhu neraya memories create pannanum.
+    Chinna chinna trips, random photos, endless conversations,
+    silly fights, cute moments... andha maadhiri oru azhagaana
+    life venum. 🥰
+  </p>
+
+  <p>
+    I don't want just birthday memories with you.
+    I want every birthday of your life to be a memory
+    we create together. ❤️
+  </p>
+
+  <p>Last-ah onnu Sammy, en Pattu...</p>
+
+  <p>
+    En life-la nee vandhadhukku romba thanks.
+    Enna love panradhukkum, enna tolerate panradhukkum,
+    en kooda irukkaradhukkum thanks.
+    Unna naan evlo love panren nu daily solla mudiyama
+    irukkalaam. Aana adhu oru naalum koraiyaadhu.
+  </p>
+
+  <p>
+    Indha birthday mattum illa, un life la varra ovvoru birthdayvum
+    naan unakku wish pannanum. Un smile ah paakkanum.
+    Unakku first wish pandra aala irukkanum.
+    Adhellam en aasai Buttu. 🎂❤️
+  </p>
+
+  <p>
+    Happy Birthday once again, my Pattu, my Buttu, my happiness,
+    my favourite human, my forever love! 🥹💋
+  </p>
+
+  <p>
+    Unakku naan promise panradhu enna na, unna love panradhu mattum illa,
+    unna purinjikittu, un feelings ah respect panni,
+    unakku nalla partner ah irukka daily try pannuven.
+  </p>
+
+  <p>
+    Distance irundhaalum, pakkathula irundhaalum,
+    en manasu eppovume unna dhaan thedum.
+  </p>
+
+  <p>
+    I MISS YOU EVEN WHEN YOU ARE RIGHT NEXT TO ME. 🥺
+  </p>
+
+  <p>
+    I'M SORRY FOR EVERY TEAR I CAUSED, AND I PROMISE TO WORK
+    ON MYSELF TO GIVE YOU MORE REASONS TO SMILE. ❤️
+  </p>
+
+  <p>
+    I LOVE YOU MORE THAN THESE WORDS CAN EVER EXPLAIN. ♾️
+  </p>
+
+  <p>
+    Forever yours,<br>
+    Unna romba romba love panra en Pattu! 😘❤️🫂
+  </p>
+
+  <p>
+    Mwahhhhh! Happy Birthday, my cutie pie! 🎂🧸💗
+  </p>
+
+  <!-- <p>
+    ONCE AGAIN, I'M SORRY AND I LOVE YOU SO MUCH, Buttu! ❤️🥹
+  </p> -->
+
+      <p style="text-align:right; color:#ffd6e7;"><b>—  ONCE AGAIN, I'M SORRY AND I LOVE YOU SO MUCH, Buttu! ❤️</b></p>
     </div>
   </div>
 </section>
@@ -1497,42 +1798,92 @@ const bookPages = [
 ];
 
 let currentPage = 0;
+let currentPhotoIndex = 0;
 
-function renderBookDots() {
-    const dotsWrap = document.getElementById('bookDots');
-    dotsWrap.innerHTML = '';
+const bookMobile = window.matchMedia("(max-width: 720px)");
 
-    bookPages.forEach((_, idx) => {
-        const dot = document.createElement('div');
+const allBookPhotos = bookPages.flatMap(page => [
+    page.left,
+    page.right
+]);
 
-        dot.className =
-            'book-dot' + (idx === currentPage ? ' active' : '');
-
-        dot.onclick = () => goToPage(idx);
-
-        dotsWrap.appendChild(dot);
-    });
+function isMobileBook() {
+    return bookMobile.matches;
 }
 
-function updateBookContent(idx) {
-    const page = bookPages[idx];
+function renderBookDots() {
+    const dotsWrap = document.getElementById("bookDots");
+    dotsWrap.innerHTML = "";
 
-    document.getElementById('bookPhotoLeft').src = page.left;
-    document.getElementById('bookPhotoRight').src = page.right;
+    const totalItems = isMobileBook()
+        ? allBookPhotos.length
+        : bookPages.length;
+
+    const activeIndex = isMobileBook()
+        ? currentPhotoIndex
+        : currentPage;
+
+    for (let idx = 0; idx < totalItems; idx++) {
+        const dot = document.createElement("div");
+
+        dot.className =
+            "book-dot" + (idx === activeIndex ? " active" : "");
+
+        dot.onclick = () => {
+            if (isMobileBook()) {
+                goToPhoto(idx);
+            } else {
+                goToPage(idx);
+            }
+        };
+
+        dotsWrap.appendChild(dot);
+    }
+}
+
+function updateBookContent() {
+    const leftImage = document.getElementById("bookPhotoLeft");
+    const rightImage = document.getElementById("bookPhotoRight");
+
+    if (isMobileBook()) {
+        // Mobile: display one photo at a time
+        leftImage.src = allBookPhotos[currentPhotoIndex];
+
+        // Do not load the second photo on mobile
+        rightImage.removeAttribute("src");
+
+        leftImage.alt =
+            `Memory ${currentPhotoIndex + 1} of ${allBookPhotos.length}`;
+
+    } else {
+        // Desktop: display the original two-page book
+        const page = bookPages[currentPage];
+
+        leftImage.src = page.left;
+        rightImage.src = page.right;
+
+        leftImage.alt = "Left Memory";
+        rightImage.alt = "Right Memory";
+    }
 
     renderBookDots();
 }
 
 function goToPage(newIdx) {
+    if (isMobileBook()) {
+        goToPhoto(newIdx * 2);
+        return;
+    }
+
     if (newIdx === currentPage) return;
 
-    const book = document.getElementById('loveBook');
+    const book = document.getElementById("loveBook");
 
     const dirClass = newIdx > currentPage
-        ? 'turning-next'
-        : 'turning-prev';
+        ? "turning-next"
+        : "turning-prev";
 
-    book.classList.remove('turning-next', 'turning-prev');
+    book.classList.remove("turning-next", "turning-prev");
 
     void book.offsetWidth;
 
@@ -1540,41 +1891,108 @@ function goToPage(newIdx) {
 
     currentPage = newIdx;
 
+    updateBookContent();
+
     setTimeout(() => {
-        updateBookContent(currentPage);
-        book.classList.remove('turning-next', 'turning-prev');
-    }, 220);
+        book.classList.remove("turning-next", "turning-prev");
+    }, 550);
+}
+
+function goToPhoto(newIdx) {
+    if (newIdx < 0 || newIdx >= allBookPhotos.length) return;
+
+    if (newIdx === currentPhotoIndex) return;
+
+    const book = document.getElementById("loveBook");
+
+    book.classList.remove("turning-next", "turning-prev");
+
+    void book.offsetWidth;
+
+    book.classList.add(
+        newIdx > currentPhotoIndex
+            ? "turning-next"
+            : "turning-prev"
+    );
+
+    currentPhotoIndex = newIdx;
+
+    currentPage = Math.floor(currentPhotoIndex / 2);
+
+    updateBookContent();
+
+    setTimeout(() => {
+        book.classList.remove("turning-next", "turning-prev");
+    }, 550);
 }
 
 function nextPage() {
-    goToPage((currentPage + 1) % bookPages.length);
+    if (isMobileBook()) {
+        goToPhoto(
+            (currentPhotoIndex + 1) % allBookPhotos.length
+        );
+    } else {
+        goToPage(
+            (currentPage + 1) % bookPages.length
+        );
+    }
 }
 
 function prevPage() {
-    goToPage(
-        (currentPage - 1 + bookPages.length) % bookPages.length
-    );
+    if (isMobileBook()) {
+        goToPhoto(
+            (currentPhotoIndex - 1 + allBookPhotos.length)
+            % allBookPhotos.length
+        );
+    } else {
+        goToPage(
+            (currentPage - 1 + bookPages.length)
+            % bookPages.length
+        );
+    }
 }
 
-// Mobile swipe support
+// Swipe support for mobile
 let touchStartX = 0;
+let touchStartY = 0;
 
-const loveBookEl = document.getElementById('loveBook');
+const loveBookEl = document.getElementById("loveBook");
 
-loveBookEl.addEventListener('touchstart', e => {
+loveBookEl.addEventListener("touchstart", e => {
     touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
 }, { passive: true });
 
-loveBookEl.addEventListener('touchend', e => {
-    const diff = e.changedTouches[0].screenX - touchStartX;
+loveBookEl.addEventListener("touchend", e => {
+    if (!isMobileBook()) return;
 
-    if (Math.abs(diff) > 45) {
-        if (diff < 0) nextPage();
-        else prevPage();
+    const touchEndX = e.changedTouches[0].screenX;
+    const touchEndY = e.changedTouches[0].screenY;
+
+    const diffX = touchEndX - touchStartX;
+    const diffY = touchEndY - touchStartY;
+
+    // Only respond to horizontal swipes
+    if (
+        Math.abs(diffX) > 45 &&
+        Math.abs(diffX) > Math.abs(diffY)
+    ) {
+        if (diffX < 0) {
+            nextPage();
+        } else {
+            prevPage();
+        }
     }
+}, { passive: true });
+
+// Update layout when switching between desktop and mobile
+bookMobile.addEventListener("change", () => {
+    currentPhotoIndex = currentPage * 2;
+    updateBookContent();
 });
 
-updateBookContent(0);
+// Initial rendering
+updateBookContent();
 /* =========================================================
    4. ROLLING GALLERY PAUSE / PLAY
    ========================================================= */
@@ -1646,3 +2064,7 @@ function closeLightbox() {
 
 </body>
 </html>
+
+
+
+
